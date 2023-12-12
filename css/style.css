@@ -1,0 +1,193 @@
+:root{
+    --main-color:#343434;
+    
+    --second-color:#1c1c1c
+}
+.section-subtittle{
+    max-width: 31.25rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif !important;
+}
+p{
+    color: RGB(116, 129, 130) !important;
+}
+.main-color{
+    color: var(--main-color) !important ;
+}
+.second-color{
+    color: var(--second-color) !important;
+}
+
+#home .nav-item .active{
+    color: var(--main-color) !important;
+}
+
+#home{
+    background-image: url(../imgs/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#home .over-lay{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.header-content h5{
+    font-size: 3.125rem;
+}
+.header-content span{
+    font-size: 60px;
+}
+.header-content .header-icons {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.about-content span{
+ color: var(--second-color);
+}
+
+.about-content .about-span .about-p{
+    color: RGB(116, 129, 130) !important;
+    line-height: 24px;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills .item{
+    margin-bottom: 30px;
+}
+.skills .item .skill-progress{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+   background-color: #f7f7f7;
+   box-shadow: 0px 3px 8px rgba(0, 0, 0, .2);
+   position: relative;
+}
+.skills .skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+.skills h6{
+    font-size: 14px;
+    position: relative;
+    z-index: 99;
+    color: #fff;
+}
+.skill-progress span::after{
+ content: '95%';
+ position: absolute;
+ top: 6px;
+ right: 10px;
+ font-size: 10px;
+ color: #fff;
+}
+.btn-dark{
+    transition: all .5;
+    background-color: var(--main-color);
+}
+.btn-dark:hover{
+    background-color: transparent;
+    color: var(--main-color);
+}
+.btn-light{
+    transition: all .5;
+    border: solid 1px var(--main-color);
+}
+.btn-light:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.service-item{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.service-box i{
+    transition: all 1s;
+}
+
+.service-box:hover i{
+    color: RGB(116, 129, 130) !important;
+}
+
+.portfolio-head h2{
+ font-size: 50px;
+ font-weight: 900;
+}
+
+.port-img .imglayer{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: opacity 0.8s;
+    opacity: 0;
+}
+.port-img .imglayer:hover{
+  opacity: 1;
+}
+
+.port-img .imglayer .port-content{
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+}
+.port-img .port-content{
+    transition: all 0.9s;
+}
+.port-img:hover .port-content{
+    top: 40%;
+}
+#work .nav-item button.active{
+    background-color: var(--main-color);
+    color: #f7f7f7;
+}
+#work .nav-item button{
+    color: var(--main-color);
+}
+
+.client-img{
+    width: 90px;
+    height: 90px;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -50px !important;
+}
+
+
+.team-img .imglayer{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: opacity 0.8s;
+    opacity: 0;
+}
+
+.team-img .imglayer:hover{
+    opacity: 1;
+}
+.team-img .imglayer .team-content{
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+}
+.team-img .team-content{
+    transition: all 0.9s;
+}
+.team-img:hover .team-content{
+    top: 40%;
+}
+.team-img{
+    overflow: hidden;
+   transition: all 0.5s;
+}
+.team-img:hover img{
+    transform: scale(1,1.2);
+}
